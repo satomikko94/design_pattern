@@ -19,7 +19,7 @@ public class BookShelfIterator implements Iterator {
 
     @Override
     public Object next() {
-        Book book = bookShelf.getBookAt(index);
+        Book book = (Book)bookShelf.getBookAt(index);
         index++;
         return book;
     }
