@@ -2,7 +2,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        BookShelf bookShelf = new BookShelf();
+        BookShelf bookShelf = new BookShelf(4);
         bookShelf.appendBook(new Book("Ç®Ç‚Ç∑Ç›ÉvÉìÉvÉì"));
         bookShelf.appendBook(new Book("ëfê∞ÇÁÇµÇ´ê¢äE"));
         bookShelf.appendBook(new Book("Ç–Ç©ÇËÇÃÇ‹Çø"));

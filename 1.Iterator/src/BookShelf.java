@@ -3,16 +3,15 @@ import java.util.ArrayList;
 
 public class BookShelf implements Aggregate{
     private ArrayList bookList;
-    private int last = 0;
     
-    public BookShelf(){
-        this.bookList = new ArrayList();
+    public BookShelf(int initialSize){
+        this.bookList = new ArrayList(initialSize);
     }
-    public Object getBookAt(int index){
-        return bookList.get(index);
+    public Book getBookAt(int index){
+        return (Book)bookList.get(index);
     }
     public void appendBook(Book book){
-        this.bookList.add(book);
+        bookList.add(book);
     }
     public int getLength(){
         return bookList.size();
