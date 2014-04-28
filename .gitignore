@@ -1,5 +1,12 @@
 *.class
 
+# for eclipse
+.metadata/
+.settings/
+.project
+.classpath
+RemoteSystemsTempFiles/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
