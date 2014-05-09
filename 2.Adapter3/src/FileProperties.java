@@ -20,7 +20,7 @@ public class FileProperties extends Properties implements FileIO {
     @Override
     public void writeToFile(String filename) throws IOException {
         FileOutputStream out = new FileOutputStream(filename);
-        String header = "";
+        String header = "written by FileProperties";
         store(out,header);
     }
 
