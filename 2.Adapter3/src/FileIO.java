@@ -5,6 +5,4 @@ public interface FileIO {
     public void writeToFile(String filename) throws IOException;
     public void setValue(String key, String value);
     public void getValue(String key);
-
-
 }
