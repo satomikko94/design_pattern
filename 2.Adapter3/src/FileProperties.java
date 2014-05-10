@@ -4,13 +4,6 @@ import java.util.Properties;
 
 public class FileProperties extends Properties implements FileIO {
 
-    public FileProperties() {
-    }
-
-    public FileProperties(Properties arg0) {
-        super(arg0);
-    }
-
     @Override
     public void readFromFile(String filename) throws IOException {
         FileInputStream in = new FileInputStream(filename);
