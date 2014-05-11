@@ -15,6 +15,9 @@ http://www.hyuki.com/dp/#download
 Release Note
 --------------
 
+### 2014.05.11
+- 3. TemplateMethod
+
 ### 2014.05.10
 - 2. Adapter
 
