@@ -1,22 +1,27 @@
 package idcard;
 
-import javax.jws.soap.SOAPBinding.Use;
-
 import framework.Product;
 
 public class IDCard extends Product {
     private String owner;
-    IDCard(String owner) {
-        System.out.println(owner + "のカードを作ります");
+    private int cardNo;
+    IDCard(String owner, int cardNo) {
+        System.out.println(owner + "のカード(" + cardNo + ")を作ります");
         this.owner = owner;
+        this.cardNo = cardNo;
     }
     
     @Override
     public void use() {
-        System.out.println(owner + "のカードを使います");
+        System.out.println(owner + "のカード(" + cardNo + ")を使います");
     }
     public String getOwner() {
         return owner;
     }
+
+    public int getCardNo() {
+        return cardNo;
+    }
+    
 
 }
