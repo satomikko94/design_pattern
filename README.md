@@ -15,6 +15,9 @@ http://www.hyuki.com/dp/#download
 Release Note
 --------------
 
+### 2014.05.19
+- 5. Singleton
+
 ### 2014.05.15
 - 4. FactoryMethod
 
