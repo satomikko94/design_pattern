@@ -3,9 +3,11 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("start.");
-        Triple obj1 = Triple.getInstance(0);
-        Triple obj2 = Triple.getInstance(1);
-        Triple obj3 = Triple.getInstance(2);
+        for (int i = 0; i < 9; i++) {
+            Triple triple = Triple.getInstance(i%3);
+            System.out.println(i + " : " + triple);
+        }
+        System.out.println("End.");
     }
 
 }
