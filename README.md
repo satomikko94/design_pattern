@@ -15,6 +15,9 @@ http://www.hyuki.com/dp/#download
 Release Note
 --------------
 
+### 2014.05.22
+- 6. Prototype
+
 ### 2014.05.19
 - 5. Singleton
 
