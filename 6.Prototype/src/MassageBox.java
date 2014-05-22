@@ -1,7 +1,4 @@
-import framework.Product;
-
-
-public class MassageBox implements Product {
+public class MassageBox extends ConcreteProduct {
     
     private char decochar;
     
@@ -20,17 +17,6 @@ public class MassageBox implements Product {
             System.out.print(decochar);
         }
         System.out.println();
-    }
-
-    @Override
-    public Product createClone() {
-        Product p = null;
-        try {
-            p = (Product)clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return p;
     }
 
 }
