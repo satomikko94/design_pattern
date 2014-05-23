@@ -16,8 +16,17 @@ public class Main {
             HTMLBuilder htmlBuilder = new HTMLBuilder();
             Director director = new Director(htmlBuilder);
             director.construct();
-            
+            String filename = htmlBuilder.getResult();
+            System.out.println(filename + "is created.");
+        }else{
+            usage();
+            System.exit(0);
         }
+    }
+    
+    public static void usage(){
+        System.out.println("Usage : java Main plain -- make plain text");
+        System.out.println("Usage : java Main html --- make html text ");
     }
 
 }
