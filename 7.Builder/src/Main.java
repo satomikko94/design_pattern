@@ -17,7 +17,7 @@ public class Main {
             Director director = new Director(htmlBuilder);
             director.construct();
             String filename = htmlBuilder.getResult();
-            System.out.println(filename + "is created.");
+            System.out.println(filename + " is created.");
         }else{
             usage();
             System.exit(0);
