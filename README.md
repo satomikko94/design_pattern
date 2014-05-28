@@ -15,6 +15,9 @@ http://www.hyuki.com/dp/#download
 Release Note
 --------------
 
+### 2014.05.29
+- 7. Builder
+
 ### 2014.05.22
 - 6. Prototype
 
