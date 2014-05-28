@@ -1,3 +1,4 @@
+import javax.swing.*;
 
 public class Main {
 
@@ -18,6 +19,12 @@ public class Main {
             director.construct();
             String filename = htmlBuilder.getResult();
             System.out.println(filename + " is created.");
+        }else if(args[0].equals("gui")){
+            FrameBuilder framebuilder = new FrameBuilder();
+            Director director = new Director(framebuilder);
+            director.construct();
+            JFrame frame = framebuilder.getResult();
+            frame.setVisible(true);
         }else{
             usage();
             System.exit(0);
